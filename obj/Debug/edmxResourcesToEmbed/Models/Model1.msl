@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LOGOModelStoreContainer" CdmEntityContainer="LOGOEntities">
+    <EntitySetMapping Name="DIVAAPILOG">
+      <EntityTypeMapping TypeName="LOGOModel.DIVAAPILOG">
+        <MappingFragment StoreEntitySet="DIVAAPILOG">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RequestMethod" ColumnName="RequestMethod" />
+          <ScalarProperty Name="RequestContent" ColumnName="RequestContent" />
+          <ScalarProperty Name="RequestTimestamp" ColumnName="RequestTimestamp" />
+          <ScalarProperty Name="ResponseContent" ColumnName="ResponseContent" />
+          <ScalarProperty Name="ResponseTimestamp" ColumnName="ResponseTimestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SaveLogInfo" FunctionName="LOGOModel.Store.SaveLogInfo" />
+  </EntityContainerMapping>
+</Mapping>
